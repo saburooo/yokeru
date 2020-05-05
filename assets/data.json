@@ -9,79 +9,145 @@
         {
             "x":128,
             "y":20,
-            "speed":2,
+            "speed":1,
             "timing":250
         },
         {
             "x":36,
             "y":20,
-            "speed":2,
+            "speed":1,
             "timing":300
         },
         {
             "x":24,
             "y":20,
-            "speed":2,
+            "speed":1,
             "timing":320
         },
         {
             "x":8,
             "y":20,
-            "speed":2,
+            "speed":1,
             "timing":340
+        },
+        {
+            "x":16,
+            "y":20,
+            "speed":1,
+            "timing":360
+        },
+        {
+            "x":24,
+            "y":20,
+            "speed":1,
+            "timing":380
+        },
+        {
+            "x":32,
+            "y":20,
+            "speed":1,
+            "timing":420
         },
         {
             "x":40,
             "y":20,
-            "speed":2,
-            "timing":400
+            "speed":1,
+            "timing":420
         },
         {
-            "x":56,
+            "x":48,
             "y":20,
-            "speed":2,
+            "speed":1,
+            "timing":420
+        },
+        {
+            "x":80,
+            "y":20,
+            "speed":1,
+            "timing":420
+        },
+        {
+            "x":88,
+            "y":20,
+            "speed":1,
             "timing":460
         },
         {
-            "x":8,
+            "x":96,
             "y":20,
-            "speed":2,
+            "speed":1,
             "timing":480
         },
         {
             "x":112,
             "y":20,
-            "speed":2,
+            "speed":1,
+            "timing":500
+        },
+        {
+            "x":120,
+            "y":20,
+            "speed":1,
+            "timing":540
+        },
+        {
+            "x":136,
+            "y":20,
+            "speed":1,
+            "timing":540
+        },
+        {
+            "x":144,
+            "y":20,
+            "speed":1,
+            "timing":560
+        },
+        {
+            "x":56,
+            "y":20,
+            "speed":1,
+            "timing":460
+        },
+        {
+            "x":8,
+            "y":20,
+            "speed":1,
+            "timing":480
+        },
+        {
+            "x":112,
+            "y":20,
+            "speed":1,
             "timing":500
         },
         {
             "x":64,
             "y":20,
-            "speed":2,
+            "speed":1,
             "timing":520
         },
         {
             "x":34,
             "y":20,
-            "speed":2,
+            "speed":1,
             "timing":540
         },
         {
             "x":112,
             "y":20,
-            "speed":2,
+            "speed":1,
             "timing":790
         },
         {
             "x":95,
             "y":20,
-            "speed":2,
+            "speed":1,
             "timing":920
         },
         {
             "x":80,
             "y":20,
-            "speed":2,
+            "speed":1,
             "timing":150
         },
         {
@@ -93,37 +159,37 @@
         {
             "x":48,
             "y":20,
-            "speed":2,
+            "speed":1,
             "timing":210
         },
         {
             "x":25,
             "y":20,
-            "speed":2,
+            "speed":1,
             "timing":240
         },
         {
             "x":20,
             "y":20,
-            "speed":2,
+            "speed":1,
             "timing":270
         },
         {
             "x":4,
             "y":20,
-            "speed":2,
+            "speed":1,
             "timing":200
         },
         {
-            "x":4,
+            "x":144,
             "y":20,
-            "speed":2,
+            "speed":1,
             "timing":140
         },
         {
-            "x":25,
+            "x":128,
             "y":20,
-            "speed":2,
+            "speed":1,
             "timing":440
         },
         {
@@ -136,7 +202,7 @@
             "x":158,
             "y":20,
             "speed":2,
-            "timing":250
+            "timing":260
         },
         {
             "x":40,
@@ -160,7 +226,7 @@
             "x":120,
             "y":20,
             "speed":2,
-            "timing":120
+            "timing":128
         },
         {
             "x":120,
@@ -214,7 +280,7 @@
             "x":16,
             "y":20,
             "speed":2,
-            "timing":420
+            "timing":440
         },
         {
             "x":36,
@@ -232,91 +298,91 @@
             "x":144,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":760
         },
         {
             "x":36,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":780
         },
         {
             "x":96,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":790
         },
         {
             "x":0,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":800
         },
         {
             "x":8,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":760
         },
         {
             "x":16,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":770
         },
         {
-            "x":24,
+            "x":128,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":800
         },
         {
             "x":32,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":770
         },
         {
             "x":40,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":780
         },
         {
             "x":48,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":770
         },
         {
             "x":56,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":760
         },
         {
             "x":64,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":760
         },
         {
             "x":72,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":760
         },
         {
             "x":80,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":770
         },
         {
             "x":88,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":760
         },
         {
             "x":96,
@@ -328,25 +394,25 @@
             "x":104,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":770
         },
         {
             "x":112,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":770
         },
         {
             "x":120,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":770
         },
         {
             "x":32,
             "y":20,
             "speed":2,
-            "timing":750
+            "timing":770
         },
         {
             "x":136,
@@ -514,25 +580,25 @@
             "x":56,
             "y":20,
             "speed":2,
-            "timing":1460
+            "timing":1480
         },
         {
             "x":64,
             "y":20,
             "speed":2,
-            "timing":1460
+            "timing":1500
         },
         {
             "x":72,
             "y":20,
             "speed":2,
-            "timing":1460
+            "timing":1520
         },
         {
             "x":80,
             "y":20,
             "speed":2,
-            "timing":1460
+            "timing":1420
         },
         {
             "x":88,
@@ -583,9 +649,9 @@
             "timing":1480
         },
         {
-            "x":144,
+            "x":56,
             "y":20,
-            "speed":2,
+            "speed":1,
             "timing":1500
         },
         {
@@ -595,7 +661,7 @@
             "timing":1520
         },
         {
-            "x":144,
+            "x":24,
             "y":20,
             "speed":2,
             "timing":1500
@@ -607,7 +673,7 @@
             "timing":1600
         },
         {
-            "x":144,
+            "x":112,
             "y":20,
             "speed":2,
             "timing":1600
@@ -671,6 +737,54 @@
             "y":20,
             "speed":2,
             "timing":1650
+        },
+        {
+            "x":72,
+            "y":20,
+            "speed":2,
+            "timing":1800
+        },
+        {
+            "x":56,
+            "y":20,
+            "speed":2,
+            "timing":1800
+        },
+        {
+            "x":112,
+            "y":20,
+            "speed":2,
+            "timing":1800
+        },
+        {
+            "x":88,
+            "y":20,
+            "speed":2,
+            "timing":1800
+        },
+        {
+            "x":72,
+            "y":20,
+            "speed":2,
+            "timing":1820
+        },
+        {
+            "x":0,
+            "y":20,
+            "speed":2,
+            "timing":1840
+        },
+        {
+            "x":112,
+            "y":20,
+            "speed":2,
+            "timing":1860
+        },
+        {
+            "x":144,
+            "y":20,
+            "speed":2,
+            "timing":1880
         }
     ]
 }

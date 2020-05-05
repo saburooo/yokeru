@@ -5,6 +5,7 @@ from random import randint
 import math
 
 class App():
+    timer = 0
     def __init__(self):
         self.player = self.Player(72, 100)
         self.enemies = self.EnemyManagement()
@@ -45,8 +46,10 @@ class App():
             for i in range(8):
                 if pyxel.pget(self.x+4, self.y+i) == 9:
                     self.x -= 2
+                    pyxel.play(0, 2)
                 if pyxel.pget(self.x+4, self.y+i) == 11:
                     self.x += 2
+                    pyxel.play(0, 2)
 
         def draw(self):
             pyxel.blt(self.x, self.y, 0, 8, 0, 8, 8, colkey=0)
@@ -63,8 +66,10 @@ class App():
             for i in range(8):
                 if pyxel.pget(self.x+4, self.y+i) == 9:
                     self.x -= 2
+                    pyxel.play(0, 2)
                 if pyxel.pget(self.x+4, self.y+i) == 11:
                     self.x += 2
+                    pyxel.play(0, 2)
 
         def draw(self):
             pyxel.blt(self.x, self.y, 0, 0, 8, 8, 8, colkey=0)
@@ -85,16 +90,17 @@ class App():
             return json_obj["enemies"]
         
         def update(self):
-            if randint(0, 99) < pyxel.frame_count // 256:
+            App.timer += 1
+            if randint(0, 99) < App.timer // 512:
                 enemy = App.Enemy_2(randint(0, 144), 20, 1)
                 self.enemy_list.append(enemy)
 
             for pattern in self.pattern_list:
-                if int(pattern["timing"]) == pyxel.frame_count:
+                if int(pattern["timing"]) == App.timer:
                     enemy = App.Enemy(pattern["x"], pattern["y"], pattern["speed"])
                     self.enemy_list.append(enemy)
 
-            if randint(0, 99) < pyxel.frame_count // 400:
+            if randint(0, 99) < App.timer // 400:
                 item = App.Item(randint(0, 144), 20)
                 self.item_list.append(item)
             
@@ -141,8 +147,10 @@ class App():
             for i in range(8):
                 if pyxel.pget(self.x+i, self.y+i) == 9:
                     self.monitor_in = False
+                    pyxel.play(0, 3)
                 if pyxel.pget(self.x+i, self.y+i) == 11:
                     self.monitor_in = False
+                    pyxel.play(0, 3)
             
             for i in range(8):
                 if pyxel.pget(self.x + i, self.y + i) == 7:
@@ -155,7 +163,9 @@ class App():
         def __init__(self, x, y):
             self.x = x
             self.y = y
-            self.life = 3
+            self.before_x = x
+            self.before_y = y
+            self.life = 8
             self.alive = True
             self.score = 0
         
@@ -163,21 +173,25 @@ class App():
             if self.alive:
                 if pyxel.btn(pyxel.KEY_A) or pyxel.btn(pyxel.GAMEPAD_1_LEFT):
                     self.x -= 3
+                    pyxel.play(0, 5)
                     if self.x <= 0:
-                        self.x = 8
+                        self.x = 0
 
                 if pyxel.btn(pyxel.KEY_D) or pyxel.btn(pyxel.GAMEPAD_1_RIGHT):
                     self.x += 3
+                    pyxel.play(0, 5)
                     if self.x == 136:
                         self.x = 136
                 
                 if pyxel.btn(pyxel.KEY_W) or pyxel.btn(pyxel.GAMEPAD_1_UP):
                     self.y -= 3
+                    pyxel.play(0, 5)
                     if self.y <= 0:
                         self.y = 8 
 
                 if pyxel.btn(pyxel.KEY_S) or pyxel.btn(pyxel.GAMEPAD_1_DOWN):
                     self.y += 3
+                    pyxel.play(0, 5)
                     if self.y >= 128:
                         self.y = 128
                 
@@ -186,38 +200,47 @@ class App():
                         if pyxel.pget(self.x + 2+i, self.y + j) == 8 or \
                             pyxel.pget(self.x + 2+i, self.y + j) == 10:
                             self.life -= 1
+                            if self.life <= 0:
+                                pyxel.play(0, 0)
 
                 for j in range(8):
                     if pyxel.pget(self.x+j, self.y + j) == 14:
-                        self.score += 1
+                        pyxel.play(0, 1)
+                        self.score += 10
                 
             if self.life <= 0:
                 self.alive = False
+                if pyxel.btn(pyxel.KEY_R):
+                    App.timer = 0
+                    self.alive = True
+                    self.x = self.before_x
+                    self.y = self.before_y
+                    self.life = 8
+                    self.score = 0
 
         def draw(self):
             if self.alive:
                 pyxel.blt(self.x, self.y, 0, 0, 0, 8, 8, colkey=0)
             for i in range(self.life):
-                pyxel.rect(8 * i, 2, 8, 8, col=12)
+                pyxel.rect(8 * i + 4, 2, 8, 8, col=12)
 
-            if self.alive == False or pyxel.frame_count >= 1800:
+            if self.alive == False:
                 pyxel.text(48, 16, "GAME OVER", col=7)
-                pyxel.text(48, 8, "SCORE:" + str(self.score), col=7)
-                # pyxel.text(36, 60, "PRESS \"R\" TO RETRY", col=7)
+                pyxel.text(36, 60, "PRESS \"R\" TO RETRY", col=7)
 
-            if self.score >= 150:
-                pyxel.text(48, 24, str(self.score), col=7)
+            pyxel.text(48, 8, "SCORE:" + str(self.score), col=7)
 
     def update(self):
-        if pyxel.frame_count <= 1800:
-            self.player.update()
-            self.enemies.update()
-            self.ret.update()
+        self.player.update()
+        self.enemies.update()
+        self.ret.update()
 
     def draw(self):
         pyxel.cls(0)
         self.player.draw()
         self.enemies.draw()
         self.ret.draw()
+        if App.timer >= 1800:
+            pyxel.text(0, 16, str(App.timer // 60) + " OVER",col=7)
 
 App()
