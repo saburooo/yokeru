@@ -55,14 +55,14 @@ class App():
             pyxel.blt(self.x, self.y, 0, 8, 0, 8, 8, colkey=0)
     
     class Enemy_2(Enemy):
-        def __init__(self, x, y, speed):
+        def __init__(self, x, y, speed, rad):
             super().__init__(x, y, speed)
             self.monitor_in = True
-            self.rand = math.radians(randint(45, 135))
+            self.rad = math.radians(rad)
         
         def update(self):
-            self.x += self.speed * math.cos(self.rand)
-            self.y += self.speed * math.sin(self.rand)
+            self.x += self.speed * math.cos(self.rad)
+            self.y += self.speed * math.sin(self.rad)
             for i in range(8):
                 if pyxel.pget(self.x+4, self.y+i) == 9:
                     self.x -= 2
@@ -79,25 +79,34 @@ class App():
             self.enemy_list = []
             self.item_list = []
             self.pattern_list = self.read_pattern()
+            self.pattern_list_2 = self.read_pattern2()
+            self.radian_pattern = [i for i in range(45, 135, 45)]
+            self.fClose()
         
         # 予め作ったパターンを記録したjsonファイルを読み込む
         def read_pattern(self):
             dirname = os.path.dirname(__file__)
             path = os.path.join(dirname, "assets/data.json")
-            in_file = open(path, "r", encoding='utf-8')
-            json_obj = json.load(in_file)
-            in_file.close()
-            return json_obj["enemies"]
+            self.in_file = open(path, "r", encoding='utf-8')
+            self.json_obj = json.load(self.in_file)
+            return self.json_obj["enemies"]
+
+        def read_pattern2(self):
+            return self.json_obj["enemies_2"]
+        
+        def fClose(self):
+            self.in_file.close()
         
         def update(self):
             App.timer += 1
-            if randint(0, 99) < App.timer // 512:
-                enemy = App.Enemy_2(randint(0, 144), 20, 1)
-                self.enemy_list.append(enemy)
-
             for pattern in self.pattern_list:
                 if int(pattern["timing"]) == App.timer:
                     enemy = App.Enemy(pattern["x"], pattern["y"], pattern["speed"])
+                    self.enemy_list.append(enemy)
+
+            for pattern in self.pattern_list_2:
+                if int(pattern["timing"]) == App.timer:
+                    enemy = App.Enemy_2(pattern["x"], pattern["y"], pattern["speed"], pattern["radian"])
                     self.enemy_list.append(enemy)
 
             if randint(0, 99) < App.timer // 400:
@@ -217,6 +226,9 @@ class App():
                     self.y = self.before_y
                     self.life = 8
                     self.score = 0
+        
+        def myxy(self):
+            return (self.x, self.y)
 
         def draw(self):
             if self.alive:
