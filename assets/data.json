@@ -1,1176 +1,266 @@
 {
     "enemies": [
         {
-            "x": 81,
+            "x": 27,
             "y": 20,
-            "speed": 2,
+            "speed": 1,
             "timing": 0
         },
         {
-            "x": 56,
+            "x": 54,
             "y": 20,
             "speed": 2,
             "timing": 30
         },
         {
-            "x": 35,
+            "x": 43,
             "y": 20,
-            "speed": 1,
+            "speed": 2,
             "timing": 60
         },
         {
-            "x": 44,
+            "x": 122,
             "y": 20,
             "speed": 1,
             "timing": 90
         },
         {
-            "x": 80,
+            "x": 59,
             "y": 20,
-            "speed": 2,
+            "speed": 1,
             "timing": 120
         },
         {
-            "x": 47,
+            "x": 112,
             "y": 20,
             "speed": 1,
             "timing": 150
         },
         {
-            "x": 44,
+            "x": 134,
             "y": 20,
-            "speed": 1,
+            "speed": 2,
             "timing": 180
         },
         {
-            "x": 87,
+            "x": 134,
             "y": 20,
-            "speed": 2,
+            "speed": 1,
             "timing": 210
         },
         {
-            "x": 97,
+            "x": 113,
             "y": 20,
             "speed": 2,
             "timing": 240
         },
         {
-            "x": 35,
+            "x": 12,
             "y": 20,
             "speed": 1,
             "timing": 270
         },
         {
-            "x": 126,
+            "x": 74,
             "y": 20,
-            "speed": 1,
+            "speed": 2,
             "timing": 300
         },
         {
-            "x": 23,
+            "x": 27,
             "y": 20,
-            "speed": 2,
+            "speed": 1,
             "timing": 330
-        },
-        {
-            "x": 127,
-            "y": 20,
-            "speed": 2,
-            "timing": 360
-        },
-        {
-            "x": 69,
-            "y": 20,
-            "speed": 2,
-            "timing": 390
-        },
-        {
-            "x": 84,
-            "y": 20,
-            "speed": 1,
-            "timing": 420
-        },
-        {
-            "x": 76,
-            "y": 20,
-            "speed": 2,
-            "timing": 450
-        },
-        {
-            "x": 91,
-            "y": 20,
-            "speed": 1,
-            "timing": 480
-        },
-        {
-            "x": 131,
-            "y": 20,
-            "speed": 1,
-            "timing": 510
-        },
-        {
-            "x": 37,
-            "y": 20,
-            "speed": 1,
-            "timing": 540
-        },
-        {
-            "x": 1,
-            "y": 20,
-            "speed": 2,
-            "timing": 570
-        },
-        {
-            "x": 62,
-            "y": 20,
-            "speed": 1,
-            "timing": 600
-        },
-        {
-            "x": 100,
-            "y": 20,
-            "speed": 1,
-            "timing": 630
-        },
-        {
-            "x": 144,
-            "y": 20,
-            "speed": 2,
-            "timing": 660
-        },
-        {
-            "x": 12,
-            "y": 20,
-            "speed": 1,
-            "timing": 690
-        },
-        {
-            "x": 71,
-            "y": 20,
-            "speed": 1,
-            "timing": 720
-        },
-        {
-            "x": 9,
-            "y": 20,
-            "speed": 2,
-            "timing": 750
-        },
-        {
-            "x": 29,
-            "y": 20,
-            "speed": 1,
-            "timing": 780
-        },
-        {
-            "x": 15,
-            "y": 20,
-            "speed": 2,
-            "timing": 810
-        },
-        {
-            "x": 108,
-            "y": 20,
-            "speed": 2,
-            "timing": 840
-        },
-        {
-            "x": 90,
-            "y": 20,
-            "speed": 1,
-            "timing": 870
-        },
-        {
-            "x": 76,
-            "y": 20,
-            "speed": 2,
-            "timing": 900
-        },
-        {
-            "x": 91,
-            "y": 20,
-            "speed": 2,
-            "timing": 930
-        },
-        {
-            "x": 125,
-            "y": 20,
-            "speed": 2,
-            "timing": 960
-        },
-        {
-            "x": 19,
-            "y": 20,
-            "speed": 1,
-            "timing": 990
-        },
-        {
-            "x": 97,
-            "y": 20,
-            "speed": 2,
-            "timing": 1020
-        },
-        {
-            "x": 28,
-            "y": 20,
-            "speed": 2,
-            "timing": 1050
-        },
-        {
-            "x": 33,
-            "y": 20,
-            "speed": 1,
-            "timing": 1080
-        },
-        {
-            "x": 75,
-            "y": 20,
-            "speed": 1,
-            "timing": 1110
-        },
-        {
-            "x": 89,
-            "y": 20,
-            "speed": 2,
-            "timing": 1140
-        },
-        {
-            "x": 32,
-            "y": 20,
-            "speed": 1,
-            "timing": 1170
-        },
-        {
-            "x": 57,
-            "y": 20,
-            "speed": 1,
-            "timing": 1200
-        },
-        {
-            "x": 140,
-            "y": 20,
-            "speed": 2,
-            "timing": 1230
-        },
-        {
-            "x": 13,
-            "y": 20,
-            "speed": 1,
-            "timing": 1260
-        },
-        {
-            "x": 45,
-            "y": 20,
-            "speed": 1,
-            "timing": 1290
-        },
-        {
-            "x": 33,
-            "y": 20,
-            "speed": 1,
-            "timing": 1320
-        },
-        {
-            "x": 47,
-            "y": 20,
-            "speed": 1,
-            "timing": 1350
-        },
-        {
-            "x": 7,
-            "y": 20,
-            "speed": 2,
-            "timing": 1380
-        },
-        {
-            "x": 118,
-            "y": 20,
-            "speed": 2,
-            "timing": 1410
-        },
-        {
-            "x": 108,
-            "y": 20,
-            "speed": 2,
-            "timing": 1440
-        },
-        {
-            "x": 22,
-            "y": 20,
-            "speed": 2,
-            "timing": 1470
-        },
-        {
-            "x": 63,
-            "y": 20,
-            "speed": 2,
-            "timing": 1500
-        },
-        {
-            "x": 25,
-            "y": 20,
-            "speed": 1,
-            "timing": 1530
-        },
-        {
-            "x": 94,
-            "y": 20,
-            "speed": 2,
-            "timing": 1560
-        },
-        {
-            "x": 12,
-            "y": 20,
-            "speed": 2,
-            "timing": 1590
-        },
-        {
-            "x": 9,
-            "y": 20,
-            "speed": 1,
-            "timing": 1620
-        },
-        {
-            "x": 124,
-            "y": 20,
-            "speed": 1,
-            "timing": 1650
-        },
-        {
-            "x": 80,
-            "y": 20,
-            "speed": 2,
-            "timing": 1680
-        },
-        {
-            "x": 130,
-            "y": 20,
-            "speed": 2,
-            "timing": 1710
-        },
-        {
-            "x": 133,
-            "y": 20,
-            "speed": 1,
-            "timing": 1740
-        },
-        {
-            "x": 117,
-            "y": 20,
-            "speed": 2,
-            "timing": 1770
-        },
-        {
-            "x": 57,
-            "y": 20,
-            "speed": 1,
-            "timing": 1800
-        },
-        {
-            "x": 119,
-            "y": 20,
-            "speed": 2,
-            "timing": 1830
-        },
-        {
-            "x": 102,
-            "y": 20,
-            "speed": 1,
-            "timing": 1860
-        },
-        {
-            "x": 106,
-            "y": 20,
-            "speed": 2,
-            "timing": 1890
-        },
-        {
-            "x": 87,
-            "y": 20,
-            "speed": 2,
-            "timing": 1920
-        },
-        {
-            "x": 32,
-            "y": 20,
-            "speed": 1,
-            "timing": 1950
-        },
-        {
-            "x": 117,
-            "y": 20,
-            "speed": 2,
-            "timing": 1980
-        },
-        {
-            "x": 129,
-            "y": 20,
-            "speed": 1,
-            "timing": 2010
-        },
-        {
-            "x": 14,
-            "y": 20,
-            "speed": 1,
-            "timing": 2040
-        },
-        {
-            "x": 131,
-            "y": 20,
-            "speed": 2,
-            "timing": 2070
-        },
-        {
-            "x": 2,
-            "y": 20,
-            "speed": 1,
-            "timing": 2100
-        },
-        {
-            "x": 75,
-            "y": 20,
-            "speed": 2,
-            "timing": 2130
-        },
-        {
-            "x": 62,
-            "y": 20,
-            "speed": 2,
-            "timing": 2160
-        },
-        {
-            "x": 41,
-            "y": 20,
-            "speed": 2,
-            "timing": 2190
-        },
-        {
-            "x": 143,
-            "y": 20,
-            "speed": 1,
-            "timing": 2220
-        },
-        {
-            "x": 129,
-            "y": 20,
-            "speed": 1,
-            "timing": 2250
-        },
-        {
-            "x": 64,
-            "y": 20,
-            "speed": 1,
-            "timing": 2280
-        },
-        {
-            "x": 5,
-            "y": 20,
-            "speed": 2,
-            "timing": 2310
-        },
-        {
-            "x": 131,
-            "y": 20,
-            "speed": 1,
-            "timing": 2340
-        },
-        {
-            "x": 4,
-            "y": 20,
-            "speed": 2,
-            "timing": 2370
-        },
-        {
-            "x": 16,
-            "y": 20,
-            "speed": 1,
-            "timing": 2400
-        },
-        {
-            "x": 129,
-            "y": 20,
-            "speed": 2,
-            "timing": 2430
-        },
-        {
-            "x": 119,
-            "y": 20,
-            "speed": 2,
-            "timing": 2460
-        },
-        {
-            "x": 63,
-            "y": 20,
-            "speed": 1,
-            "timing": 2490
-        },
-        {
-            "x": 77,
-            "y": 20,
-            "speed": 2,
-            "timing": 2520
         },
         {
             "x": 46,
             "y": 20,
             "speed": 2,
-            "timing": 2550
+            "timing": 360
         },
         {
-            "x": 12,
-            "y": 20,
-            "speed": 2,
-            "timing": 2580
-        },
-        {
-            "x": 18,
+            "x": 16,
             "y": 20,
             "speed": 1,
-            "timing": 2610
+            "timing": 390
         },
         {
-            "x": 61,
+            "x": 125,
             "y": 20,
             "speed": 1,
-            "timing": 2640
-        },
-        {
-            "x": 75,
-            "y": 20,
-            "speed": 2,
-            "timing": 2670
-        }
-    ],
-    "enemies_2": [
-        {
-            "x": 115,
-            "y": 20,
-            "timing": 0,
-            "speed": 2,
-            "radian": 46
-        },
-        {
-            "x": 137,
-            "y": 20,
-            "timing": 30,
-            "speed": 2,
-            "radian": 104
-        },
-        {
-            "x": 101,
-            "y": 20,
-            "timing": 60,
-            "speed": 1,
-            "radian": 121
-        },
-        {
-            "x": 133,
-            "y": 20,
-            "timing": 90,
-            "speed": 1,
-            "radian": 123
-        },
-        {
-            "x": 131,
-            "y": 20,
-            "timing": 120,
-            "speed": 2,
-            "radian": 121
-        },
-        {
-            "x": 51,
-            "y": 20,
-            "timing": 150,
-            "speed": 1,
-            "radian": 81
-        },
-        {
-            "x": 101,
-            "y": 20,
-            "timing": 180,
-            "speed": 2,
-            "radian": 123
-        },
-        {
-            "x": 65,
-            "y": 20,
-            "timing": 210,
-            "speed": 2,
-            "radian": 78
-        },
-        {
-            "x": 138,
-            "y": 20,
-            "timing": 240,
-            "speed": 2,
-            "radian": 107
-        },
-        {
-            "x": 67,
-            "y": 20,
-            "timing": 270,
-            "speed": 2,
-            "radian": 45
-        },
-        {
-            "x": 121,
-            "y": 20,
-            "timing": 300,
-            "speed": 1,
-            "radian": 130
-        },
-        {
-            "x": 91,
-            "y": 20,
-            "timing": 330,
-            "speed": 1,
-            "radian": 98
-        },
-        {
-            "x": 101,
-            "y": 20,
-            "timing": 360,
-            "speed": 2,
-            "radian": 49
-        },
-        {
-            "x": 69,
-            "y": 20,
-            "timing": 390,
-            "speed": 1,
-            "radian": 70
+            "timing": 420
         },
         {
             "x": 24,
             "y": 20,
-            "timing": 420,
             "speed": 1,
-            "radian": 96
-        },
-        {
-            "x": 8,
-            "y": 20,
-            "timing": 450,
-            "speed": 2,
-            "radian": 133
-        },
-        {
-            "x": 53,
-            "y": 20,
-            "timing": 480,
-            "speed": 1,
-            "radian": 103
-        },
-        {
-            "x": 36,
-            "y": 20,
-            "timing": 510,
-            "speed": 2,
-            "radian": 78
-        },
-        {
-            "x": 32,
-            "y": 20,
-            "timing": 540,
-            "speed": 1,
-            "radian": 128
-        },
-        {
-            "x": 49,
-            "y": 20,
-            "timing": 570,
-            "speed": 1,
-            "radian": 89
-        },
-        {
-            "x": 34,
-            "y": 20,
-            "timing": 600,
-            "speed": 2,
-            "radian": 94
-        },
-        {
-            "x": 85,
-            "y": 20,
-            "timing": 630,
-            "speed": 1,
-            "radian": 130
-        },
-        {
-            "x": 112,
-            "y": 20,
-            "timing": 660,
-            "speed": 1,
-            "radian": 100
-        },
-        {
-            "x": 104,
-            "y": 20,
-            "timing": 690,
-            "speed": 1,
-            "radian": 135
-        },
-        {
-            "x": 104,
-            "y": 20,
-            "timing": 720,
-            "speed": 1,
-            "radian": 108
-        },
-        {
-            "x": 38,
-            "y": 20,
-            "timing": 750,
-            "speed": 2,
-            "radian": 133
-        },
-        {
-            "x": 83,
-            "y": 20,
-            "timing": 780,
-            "speed": 1,
-            "radian": 48
-        },
-        {
-            "x": 79,
-            "y": 20,
-            "timing": 810,
-            "speed": 1,
-            "radian": 85
-        },
-        {
-            "x": 30,
-            "y": 20,
-            "timing": 840,
-            "speed": 1,
-            "radian": 52
-        },
-        {
-            "x": 24,
-            "y": 20,
-            "timing": 870,
-            "speed": 1,
-            "radian": 120
+            "timing": 450
         },
         {
             "x": 117,
             "y": 20,
-            "timing": 900,
             "speed": 2,
-            "radian": 120
+            "timing": 480
         },
         {
-            "x": 19,
+            "x": 104,
             "y": 20,
-            "timing": 930,
-            "speed": 2,
-            "radian": 94
-        },
-        {
-            "x": 57,
-            "y": 20,
-            "timing": 960,
             "speed": 1,
-            "radian": 86
-        },
-        {
-            "x": 73,
-            "y": 20,
-            "timing": 990,
-            "speed": 2,
-            "radian": 105
-        },
-        {
-            "x": 26,
-            "y": 20,
-            "timing": 1020,
-            "speed": 1,
-            "radian": 84
-        },
-        {
-            "x": 120,
-            "y": 20,
-            "timing": 1050,
-            "speed": 2,
-            "radian": 87
-        },
-        {
-            "x": 108,
-            "y": 20,
-            "timing": 1080,
-            "speed": 2,
-            "radian": 54
-        },
-        {
-            "x": 95,
-            "y": 20,
-            "timing": 1110,
-            "speed": 1,
-            "radian": 135
-        },
-        {
-            "x": 7,
-            "y": 20,
-            "timing": 1140,
-            "speed": 1,
-            "radian": 105
-        },
-        {
-            "x": 26,
-            "y": 20,
-            "timing": 1170,
-            "speed": 1,
-            "radian": 63
-        },
-        {
-            "x": 47,
-            "y": 20,
-            "timing": 1200,
-            "speed": 1,
-            "radian": 55
-        },
-        {
-            "x": 87,
-            "y": 20,
-            "timing": 1230,
-            "speed": 2,
-            "radian": 129
-        },
-        {
-            "x": 126,
-            "y": 20,
-            "timing": 1260,
-            "speed": 1,
-            "radian": 71
+            "timing": 510
         },
         {
             "x": 11,
             "y": 20,
-            "timing": 1290,
-            "speed": 1,
-            "radian": 115
-        },
-        {
-            "x": 25,
-            "y": 20,
-            "timing": 1320,
             "speed": 2,
-            "radian": 67
-        },
-        {
-            "x": 42,
-            "y": 20,
-            "timing": 1350,
-            "speed": 2,
-            "radian": 96
-        },
-        {
-            "x": 52,
-            "y": 20,
-            "timing": 1380,
-            "speed": 2,
-            "radian": 97
-        },
-        {
-            "x": 143,
-            "y": 20,
-            "timing": 1410,
-            "speed": 1,
-            "radian": 122
+            "timing": 540
         },
         {
             "x": 117,
             "y": 20,
-            "timing": 1440,
-            "speed": 2,
-            "radian": 125
-        },
-        {
-            "x": 17,
-            "y": 20,
-            "timing": 1470,
-            "speed": 2,
-            "radian": 118
-        },
-        {
-            "x": 114,
-            "y": 20,
-            "timing": 1500,
-            "speed": 2,
-            "radian": 115
-        },
-        {
-            "x": 64,
-            "y": 20,
-            "timing": 1530,
             "speed": 1,
-            "radian": 126
-        },
+            "timing": 570
+        }
+    ],
+    "enemies_2": [
         {
-            "x": 24,
+            "x": 9,
             "y": 20,
-            "timing": 1560,
-            "speed": 1,
-            "radian": 105
-        },
-        {
-            "x": 143,
-            "y": 20,
-            "timing": 1590,
+            "timing": 0,
             "speed": 2,
-            "radian": 73
+            "radian": 90
         },
         {
-            "x": 136,
+            "x": 118,
             "y": 20,
-            "timing": 1620,
+            "timing": 30,
             "speed": 1,
-            "radian": 64
-        },
-        {
-            "x": 6,
-            "y": 20,
-            "timing": 1650,
-            "speed": 2,
-            "radian": 51
-        },
-        {
-            "x": 142,
-            "y": 20,
-            "timing": 1680,
-            "speed": 2,
-            "radian": 63
-        },
-        {
-            "x": 31,
-            "y": 20,
-            "timing": 1710,
-            "speed": 1,
-            "radian": 110
-        },
-        {
-            "x": 106,
-            "y": 20,
-            "timing": 1740,
-            "speed": 2,
-            "radian": 109
-        },
-        {
-            "x": 47,
-            "y": 20,
-            "timing": 1770,
-            "speed": 1,
-            "radian": 95
-        },
-        {
-            "x": 131,
-            "y": 20,
-            "timing": 1800,
-            "speed": 1,
-            "radian": 127
-        },
-        {
-            "x": 88,
-            "y": 20,
-            "timing": 1830,
-            "speed": 2,
-            "radian": 106
-        },
-        {
-            "x": 32,
-            "y": 20,
-            "timing": 1860,
-            "speed": 2,
-            "radian": 101
-        },
-        {
-            "x": 141,
-            "y": 20,
-            "timing": 1890,
-            "speed": 1,
-            "radian": 110
-        },
-        {
-            "x": 56,
-            "y": 20,
-            "timing": 1920,
-            "speed": 2,
-            "radian": 77
-        },
-        {
-            "x": 8,
-            "y": 20,
-            "timing": 1950,
-            "speed": 1,
-            "radian": 97
+            "radian": 135
         },
         {
             "x": 91,
             "y": 20,
-            "timing": 1980,
+            "timing": 60,
             "speed": 1,
-            "radian": 134
+            "radian": 90
         },
         {
-            "x": 28,
+            "x": 101,
             "y": 20,
-            "timing": 2010,
+            "timing": 90,
+            "speed": 1,
+            "radian": 90
+        },
+        {
+            "x": 101,
+            "y": 20,
+            "timing": 120,
             "speed": 2,
-            "radian": 113
+            "radian": 135
         },
         {
-            "x": 140,
+            "x": 96,
             "y": 20,
-            "timing": 2040,
+            "timing": 150,
+            "speed": 1,
+            "radian": 90
+        },
+        {
+            "x": 128,
+            "y": 20,
+            "timing": 180,
+            "speed": 1,
+            "radian": 45
+        },
+        {
+            "x": 38,
+            "y": 20,
+            "timing": 210,
+            "speed": 1,
+            "radian": 90
+        },
+        {
+            "x": 115,
+            "y": 20,
+            "timing": 240,
+            "speed": 1,
+            "radian": 135
+        },
+        {
+            "x": 54,
+            "y": 20,
+            "timing": 270,
+            "speed": 1,
+            "radian": 45
+        },
+        {
+            "x": 58,
+            "y": 20,
+            "timing": 300,
+            "speed": 1,
+            "radian": 45
+        },
+        {
+            "x": 57,
+            "y": 20,
+            "timing": 330,
             "speed": 2,
-            "radian": 59
+            "radian": 135
         },
         {
-            "x": 63,
+            "x": 73,
             "y": 20,
-            "timing": 2070,
+            "timing": 360,
             "speed": 1,
-            "radian": 69
+            "radian": 45
         },
         {
-            "x": 132,
+            "x": 109,
             "y": 20,
-            "timing": 2100,
-            "speed": 1,
-            "radian": 98
-        },
-        {
-            "x": 72,
-            "y": 20,
-            "timing": 2130,
-            "speed": 1,
-            "radian": 65
-        },
-        {
-            "x": 82,
-            "y": 20,
-            "timing": 2160,
+            "timing": 390,
             "speed": 2,
-            "radian": 106
+            "radian": 90
         },
         {
-            "x": 39,
+            "x": 11,
             "y": 20,
-            "timing": 2190,
-            "speed": 1,
-            "radian": 83
-        },
-        {
-            "x": 31,
-            "y": 20,
-            "timing": 2220,
-            "speed": 1,
-            "radian": 69
-        },
-        {
-            "x": 133,
-            "y": 20,
-            "timing": 2250,
-            "speed": 1,
-            "radian": 53
-        },
-        {
-            "x": 94,
-            "y": 20,
-            "timing": 2280,
-            "speed": 1,
-            "radian": 128
-        },
-        {
-            "x": 67,
-            "y": 20,
-            "timing": 2310,
-            "speed": 1,
-            "radian": 86
-        },
-        {
-            "x": 8,
-            "y": 20,
-            "timing": 2340,
-            "speed": 1,
-            "radian": 111
-        },
-        {
-            "x": 29,
-            "y": 20,
-            "timing": 2370,
+            "timing": 420,
             "speed": 2,
-            "radian": 72
+            "radian": 45
         },
         {
-            "x": 2,
+            "x": 0,
             "y": 20,
-            "timing": 2400,
-            "speed": 1,
-            "radian": 104
-        },
-        {
-            "x": 133,
-            "y": 20,
-            "timing": 2430,
+            "timing": 450,
             "speed": 2,
-            "radian": 94
+            "radian": 135
         },
         {
-            "x": 42,
+            "x": 101,
             "y": 20,
-            "timing": 2460,
+            "timing": 480,
             "speed": 2,
-            "radian": 77
+            "radian": 45
         },
         {
-            "x": 15,
+            "x": 98,
             "y": 20,
-            "timing": 2490,
-            "speed": 1,
-            "radian": 85
-        },
-        {
-            "x": 24,
-            "y": 20,
-            "timing": 2520,
-            "speed": 1,
-            "radian": 98
-        },
-        {
-            "x": 23,
-            "y": 20,
-            "timing": 2550,
-            "speed": 1,
-            "radian": 82
-        },
-        {
-            "x": 23,
-            "y": 20,
-            "timing": 2580,
+            "timing": 510,
             "speed": 2,
-            "radian": 103
+            "radian": 135
         },
         {
-            "x": 69,
+            "x": 115,
             "y": 20,
-            "timing": 2610,
+            "timing": 540,
             "speed": 1,
-            "radian": 49
+            "radian": 45
         },
         {
-            "x": 9,
+            "x": 59,
             "y": 20,
-            "timing": 2640,
+            "timing": 570,
             "speed": 1,
-            "radian": 113
-        },
-        {
-            "x": 51,
-            "y": 20,
-            "timing": 2670,
-            "speed": 2,
-            "radian": 75
+            "radian": 90
         }
     ]
 }

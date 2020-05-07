@@ -29,9 +29,9 @@ class App():
         def draw(self):
             # 線の色が軌道を決める。
             if pyxel.btn(pyxel.MOUSE_LEFT_BUTTON):
-                pyxel.line(self.x, self.y, pyxel.mouse_x, pyxel.mouse_y, col=9)
+                pyxel.line(pyxel.mouse_x, pyxel.mouse_y, self.x, self.y, col=9)
             if pyxel.btn(pyxel.MOUSE_RIGHT_BUTTON):
-                pyxel.line(self.x, self.y, pyxel.mouse_x, pyxel.mouse_y, col=11)
+                pyxel.line(pyxel.mouse_x, pyxel.mouse_y, self.x, self.y, col=11)
     
     class Enemy():
         def __init__(self, x, y, speed):
@@ -43,7 +43,7 @@ class App():
         # シンプルに落ちるところから
         def update(self):
             self.y += self.speed
-            for i in range(8):
+            for i in range(4):
                 if pyxel.pget(self.x+4, self.y+i) == 9:
                     self.x -= 2
                     pyxel.play(0, 2)
@@ -52,7 +52,7 @@ class App():
                     pyxel.play(0, 2)
 
         def draw(self):
-            pyxel.blt(self.x, self.y, 0, 8, 0, 8, 8, colkey=0)
+            pyxel.circ(self.x, self.y, 2, col=8)
     
     class Enemy_2(Enemy):
         def __init__(self, x, y, speed, rad):
@@ -62,17 +62,43 @@ class App():
         
         def update(self):
             self.x += self.speed * math.cos(self.rad)
-            self.y += self.speed * math.sin(self.rad)
-            for i in range(8):
-                if pyxel.pget(self.x+4, self.y+i) == 9:
+            self.y += self.speed * math.sin(-self.rad)
+            for i in range(4):
+                if pyxel.pget(self.x+2, self.y+i) == 9:
                     self.x -= 2
                     pyxel.play(0, 2)
-                if pyxel.pget(self.x+4, self.y+i) == 11:
+                if pyxel.pget(self.x+2, self.y+i) == 11:
                     self.x += 2
                     pyxel.play(0, 2)
 
         def draw(self):
-            pyxel.blt(self.x, self.y, 0, 0, 8, 8, 8, colkey=0)
+            pyxel.circ(self.x, self.y, 2, col=10)
+
+    class Enemy_3(Enemy):
+        def __init__(self, x, y, speed, target):
+            super().__init__(x, y, speed)
+            self.monitor_in = True
+            self.tx = target.x
+            self.ty = target.y
+        
+        def update(self):
+            dx = self.tx - self.x
+            dy = self.ty - self.y
+            rad = math.atan2(-dy, dx)
+            deg = math.degrees(rad)
+            self.x += self.speed * math.cos(deg)
+            self.y += self.speed * -math.sin(deg)
+
+            for i in range(4):
+                if pyxel.pget(self.x+2, self.y+i) == 9:
+                    self.x -= 2
+                    pyxel.play(0, 2)
+                if pyxel.pget(self.x+2, self.y+i) == 11:
+                    self.x += 2
+                    pyxel.play(0, 2)
+
+        def draw(self):
+            pyxel.circ(self.x, self.y, 2, col=10)
     
     class EnemyManagement():
         def __init__(self):
@@ -97,7 +123,7 @@ class App():
         def fClose(self):
             self.in_file.close()
         
-        def update(self):
+        def update(self, target):
             App.timer += 1
             for pattern in self.pattern_list:
                 if int(pattern["timing"]) == App.timer:
@@ -107,6 +133,8 @@ class App():
             for pattern in self.pattern_list_2:
                 if int(pattern["timing"]) == App.timer:
                     enemy = App.Enemy_2(pattern["x"], pattern["y"], pattern["speed"], pattern["radian"])
+                    self.enemy_list.append(enemy)
+                    enemy = App.Enemy_3(pattern["x"], pattern["y"], pattern["speed"], target)
                     self.enemy_list.append(enemy)
 
             if randint(0, 99) < App.timer // 400:
@@ -244,7 +272,7 @@ class App():
 
     def update(self):
         self.player.update()
-        self.enemies.update()
+        self.enemies.update(self.player)
         self.ret.update()
 
     def draw(self):
